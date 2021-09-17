@@ -145,8 +145,13 @@ trig = trigramas(mytext)[0]
 print(trig[0],trig[1][0]," veces. Distancias: ",trig[1][1])
 
 
+# utf
+print("utf-8")
+for i in mytext:
+    print(ord(i.encode("utf-8")),end='')
+print()
 
 # con aqui
-
+print("AQUI")
 mytext = AQUI(mytext)
 print(mytext)
